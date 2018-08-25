@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="799.0" style="-fx-background-color: #0070D3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLPrincipalController">
+   <children>
+      <JFXTextField fx:id="txtPesq" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="177.0" layoutY="152.0" prefHeight="56.0" prefWidth="445.0" promptText="Pesquisar:" stylesheets="@../styles/style.css" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text_field" />
+            <String fx:value="hover_text_field" />
+         </styleClass></JFXTextField>
+      <JFXButton layoutX="399.0" layoutY="226.0" onAction="#limparpesq" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_edit" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/limpa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="314.0" layoutY="226.0" prefHeight="63.0" prefWidth="63.0" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="hover_button" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/busca.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnLGravar" layoutX="103.0" layoutY="734.0" onAction="#btnADD" prefHeight="63.0" prefWidth="63.0" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="hover_button" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="250.0" layoutY="734.0" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_edit" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/edite.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="brnRemove" layoutX="176.0" layoutY="734.0" onAction="#remove" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_sair" stylesheets="@../styles/style.css" text="Button" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exclui.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnSair" layoutX="696.0" layoutY="34.0" onAction="#sair" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_sair" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="614.0" layoutY="34.0" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_sobre" stylesheets="@../styles/style.css" text="Button" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sobre.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="txtSite" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="423.0" layoutY="320.0" prefHeight="56.0" prefWidth="343.0" promptText="Site/Serviço:" stylesheets="@../styles/style.css" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text_field" />
+            <String fx:value="hover_text_field" />
+         </styleClass>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLogin" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="423.0" layoutY="401.0" prefHeight="56.0" prefWidth="343.0" promptText="Login:" stylesheets="@../styles/style.css" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text_field" />
+            <String fx:value="hover_text_field" />
+         </styleClass>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSenha" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="423.0" layoutY="479.0" prefHeight="56.0" prefWidth="343.0" promptText="Senha:" stylesheets="@../styles/style.css" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text_field" />
+            <String fx:value="hover_text_field" />
+         </styleClass>
+      </JFXTextField>
+      <JFXTextField fx:id="txtObs" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="423.0" layoutY="560.0" prefHeight="146.0" prefWidth="343.0" promptText="Observações:" stylesheets="@../styles/style.css" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text_field" />
+            <String fx:value="hover_text_field" />
+         </styleClass>
+      </JFXTextField>
+      <JFXButton fx:id="btnGravar" disable="true" layoutX="488.0" layoutY="734.0" onAction="#addServicos" prefHeight="63.0" prefWidth="63.0" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="hover_button" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnLimpaCad" disable="true" layoutX="634.0" layoutY="734.0" onAction="#limparcad" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_edit" stylesheets="@../styles/style.css" text="Button" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/limpa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="85.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KeyBook" wrappingWidth="152.7099609375">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="209.0" layoutY="61.0">
+         <image>
+            <Image url="@../images/login.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUser" layoutX="531.0" layoutY="48.0" text="User" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCancela" disable="true" layoutX="561.0" layoutY="734.0" onAction="#desabilitaCampos" prefHeight="63.0" prefWidth="63.0" styleClass="hover_button_sair" stylesheets="@../styles/style.css" textFill="#655555" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXListView fx:id="listView" layoutX="37.0" layoutY="318.0" prefHeight="391.0" prefWidth="343.0" stylesheets="@../styles/style.css">
+         <styleClass>
+            <String fx:value="listview" />
+            <String fx:value="list-cell" />
+         </styleClass>
+      </JFXListView>
+      <StackPane fx:id="stackPane" layoutY="296.0" prefHeight="13.0" prefWidth="799.0" />
+   </children>
+</Pane>

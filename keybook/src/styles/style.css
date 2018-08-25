@@ -1,0 +1,93 @@
+
+.text_field{
+    -fx-prompt-text-fill: #FFFFFF;
+    -fx-border-color: #F3C20C;
+    -fx-text-fill: #FFFFFF;
+}
+
+.hover_text_field:focused {
+    -fx-border-color: null;
+    -fx-text-fill: #FFFFFF;   
+}
+
+.button{
+    -fx-background-color: #0070D3;
+    -fx-background-radius: 100px;
+    -fx-border-color: #F3C20C;
+    -fx-border-radius: 100px;
+    -fx-border-width: 1.5px;
+} 
+
+.hover_button:hover {
+    -fx-background-color: #009149;
+
+}
+
+.hover_button_sair:hover {
+    -fx-background-color: #CF3A2D;
+}
+
+.hover_button_edit:hover {
+    -fx-background-color: #F3C20C;
+
+}
+
+.hover_button_sobre:hover {
+    -fx-background-color: #000000;
+
+}
+
+.listview{
+    -fx-background-color: #0070D3;
+    -fx-border-color: #F3C20C;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: white; 
+    -fx-font: 20pt "Segoe UI Light";
+    -fx-alignment: center;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: #0070D3;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.list-cell:odd {
+    -fx-background-color: #0070D3;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #009149;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+   
+}
+
+.listview .scroll-bar{
+    -fx-background-color: #0070D3;
+}
+
+.listview .scroll-bar .thumb{
+    -fx-background-color: #F3C20C;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+.listview .scroll-bar .increment-button ,
+.listview .scroll-bar .decrement-button {
+    -fx-background-color:transparent;
+}
+
+.listview .scroll-bar .increment-arrow ,
+.listview .scroll-bar .decrement-arrow {
+    -fx-background-color:transparent;
+    -fx-padding:0;
+}

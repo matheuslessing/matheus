@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Menu 
 
 1	2	3	4
+=======
+jjk | gjkg | gj,, | 123
+>>>>>>> master

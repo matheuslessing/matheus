@@ -1,0 +1,28 @@
+.text_field{
+    -fx-prompt-text-fill: #FFFFFF;
+    -fx-border-color: #F3C20C;
+    -fx-text-fill: #FFFFFF;
+}
+
+.hover_text_field:focused {
+    -fx-prompt-text-fill: #60BA89;
+    -fx-border-color: #F3C20C;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button{
+    -fx-background-color: #009149;
+    -fx-background-radius: 100px;
+    -fx-border-color: #F3C20C;
+    -fx-border-radius: 100px;
+    -fx-border-width: 1.5px;
+}
+
+.hover_button:hover {
+    -fx-background-color: #0070D3;
+}
+
+.hover_button_sair:hover {
+    -fx-background-color: #CF3A2D;
+}
+
