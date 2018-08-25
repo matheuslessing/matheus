@@ -19,4 +19,9 @@ public class ModuloConexao {
         }
     }
 
+    
+  public static void ModuloConexao(){
+      String sql = "select * from usuarios where login=? and senha=?";
+  }
+    
 }

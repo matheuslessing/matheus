@@ -62,7 +62,7 @@ public class FXMLLoginController implements Initializable {
             dialogException(t);
         }
     }
-;
+
     @FXML
     private void sair() {
         Stage stage = (Stage) btnSair.getScene().getWindow(); //Obtendo a janela atual
